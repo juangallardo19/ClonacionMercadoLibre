@@ -123,7 +123,8 @@ function DeveloperCard({ dev }: { dev: typeof developers[0] }) {
           <p className="text-sm text-[#888] mb-3">{dev.role}</p>
           <p className="text-sm text-[#555] leading-relaxed">{dev.description}</p>
         </div>
-        <p className="text-xs text-[#bbb] italic self-end">Hover para ver portafolio →</p>
+        <p className="text-xs text-[#bbb] italic self-end hidden md:block">Hover para ver portafolio →</p>
+        <p className="text-xs text-[#3483fa] italic self-end md:hidden font-medium">Toca para ver portafolio →</p>
       </div>
     </Link>
   )
@@ -183,7 +184,7 @@ export default function Footer() {
         <>
           <div className="border-t border-[#ddd] bg-white">
             <div className="max-w-[1200px] mx-auto px-4 py-4">
-              <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm text-[#666] mb-2">
+              <div className="grid grid-cols-2 sm:flex sm:flex-wrap gap-x-6 gap-y-2 text-sm text-[#666] mb-2">
                 <a href="#" className="hover:text-[#3483fa]">Trabaja con nosotros</a>
                 <a href="#" className="hover:text-[#3483fa]">Términos y condiciones</a>
                 <a href="#" className="hover:text-[#3483fa]">Promociones</a>
@@ -199,7 +200,7 @@ export default function Footer() {
           </div>
 
           <div className="border-t border-[#ddd] bg-white">
-            <div className="max-w-[1200px] mx-auto px-4 py-4 flex items-center gap-8">
+            <div className="max-w-[1200px] mx-auto px-4 py-4 flex flex-wrap items-center gap-4 md:gap-8">
               <Image
                 src="/images/sic-logo.png"
                 alt="Superintendencia de Industria y Comercio"
