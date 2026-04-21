@@ -32,7 +32,7 @@ export default function ProductGrid({
 
   return (
     <div className="flex-1">
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {filtered.map((car) => (
           <ProductCard
             key={car.id}

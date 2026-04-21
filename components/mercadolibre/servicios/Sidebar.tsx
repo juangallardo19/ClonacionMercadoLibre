@@ -52,7 +52,7 @@ export default function Sidebar({
   const visibleCities = showAllCities ? allCities : allCities.slice(0, 5)
 
   return (
-    <aside className="w-[220px] flex-shrink-0">
+    <aside className="w-full md:w-[220px] md:flex-shrink-0">
       <h2 className="text-2xl font-light text-[#333] mb-1">Carros y Camionetas Coupé</h2>
       <p className="text-sm text-[#666] mb-4">{resultCount} resultados</p>
 
